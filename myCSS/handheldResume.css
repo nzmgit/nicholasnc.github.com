@@ -12,20 +12,7 @@
     flex-direction: column;*/
     font-size: 1.5em;
 
-    display: box;			  /* OLD - Android 4.4- */
-    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;	  /* TWEENER - IE 10 */
-    display: -webkit-flex;	 /* NEW - Chrome */
-    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    /* 09版 */
-    -webkit-box-orient: horizontal;
-    /* 12版 */
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
+    float: left;
 }
 
 /*简介*/
@@ -43,31 +30,17 @@
     display: -ms-flexbox;	  /* TWEENER - IE 10 */
     display: -webkit-flex;	 /* NEW - Chrome */
     display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    /* 09版 */
-    -webkit-box-orient: horizontal;
-    /* 12版 */
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
-    flex-direction: row;
+
 }
 
 /*图片*/
 #brief .myPic{
     width: 180px;
     height: 210px;
-    margin: 0 0 5px 5px;
+    margin: 5px 0 5px 5px;
     /*align-self:flex-end;*/
 
-    /* 09版 */
-    -webkit-box-align: flex-end;
-    /* 12版 */
-    -webkit-align-self: flex-end;
-    -moz-align-self: flex-end;
-    -ms-align-self: flex-end;
-    -o-align-self: flex-end;
-    align-self: flex-end;
+
 }
 
 /*简介的内容*/
@@ -75,7 +48,7 @@
     color: white;
     /*flex: 1;*/
     list-style: none;
-    margin: 0;
+    margin: 40px 0 0 0;
     /*align-self:flex-end;*/
 
     -webkit-box-flex: 1;	  /* OLD - iOS 6-, Safari 3.1-6 */
@@ -84,14 +57,7 @@
     -ms-flex: 1;			  /* IE 10 */
     flex: 1;				  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
-    /* 09版 */
-    -webkit-box-align: flex-end;
-    /* 12版 */
-    -webkit-align-self: flex-end;
-    -moz-align-self: flex-end;
-    -ms-align-self: flex-end;
-    -o-align-self: flex-end;
-    align-self: flex-end;
+
 }
 #brief ul li{
     margin:0 0px 5px 0;
