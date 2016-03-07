@@ -8,16 +8,23 @@
     width: 100%;
     margin: 30px 0 50px 5%;
 	font-family:"Microsoft YaHei";
+    /*display: flex;
+    flex-direction: column;*/
     font-size: 1.5em;
 
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
-    -webkit-flex-direction:column;
-    -moz-flex-direction:column;
-    -ms-flex-direction:column;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-orient: horizontal;
+    /* 12版 */
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     flex-direction: column;
 }
 
@@ -26,17 +33,24 @@
     width: 95%;
     height: 220px;
     background-color: #a02828;
+    /*display: flex;
+    flex-direction:row;*/
     margin-bottom: 20px;
 
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
-    -webkit-flex-direction:row;
-    -moz-flex-direction:row;
-    -ms-flex-direction:row;
-    flex-direction:row;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-orient: horizontal;
+    /* 12版 */
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
 }
 
 /*图片*/
@@ -63,7 +77,7 @@
 
 /*具体内容*/
 #content{
-	width: 95%;
+	width: 95%;``
     height: 900px;
 }
 
@@ -83,11 +97,12 @@
 
 #content .experience > div{
     margin: 0 0 10px 0;
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 #content .experience > div :first-child{
     width: 220px;
@@ -98,11 +113,12 @@
 
 #content .awards > div{
     margin: 0 0 10px 0;
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 #content .awards > div :first-child{
     width: 220px;
@@ -113,11 +129,12 @@
 
 #content .internship > div{
     margin: 0 0 10px 0;
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 #content .internship > div :first-child{
     width: 220px;
@@ -128,21 +145,23 @@
 
 #content .technology > div{
     margin: 0 0 10px 0;
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 #content .technology > div :first-child{
     width: 220px;
 }
 #content .technology > div :last-child{
-    display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
-    display: -moz-box;    /* 老版本语法: Firefox (buggy) */
-    display: -ms-flexbox; /* 混合版本语法: IE 10 */
-    display: -webkit-flex; /* 新版本语法： Chrome 21+ */
-    display: flex;
+    display: box;			  /* OLD - Android 4.4- */
+    display: -webkit-box;	  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;		 /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;	  /* TWEENER - IE 10 */
+    display: -webkit-flex;	 /* NEW - Chrome */
+    display: flex;			 /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 #content .technology > div [class*=list] [class*=degree]{
