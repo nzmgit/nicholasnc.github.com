@@ -8,7 +8,6 @@
     width: 100%;
     margin: 30px 0 50px 5%;
 	font-family:"Microsoft YaHei";
-    flex-direction: column;
     font-size: 1.5em;
 
     display: -webkit-box; /* 老版本语法: Safari,  iOS, Android browser, older WebKit browsers.  */
@@ -16,6 +15,10 @@
     display: -ms-flexbox; /* 混合版本语法: IE 10 */
     display: -webkit-flex; /* 新版本语法： Chrome 21+ */
     display: flex;
+    -webkit-flex-direction:column;
+    -moz-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction: column;
 }
 
 /*简介*/
