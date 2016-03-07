@@ -10,47 +10,36 @@
 	font-family:"Microsoft YaHei";
     display: flex;
     flex-direction: column;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 /*简介*/
 #brief{
     width: 95%;
     height: 220px;
-    /*position: relative;*/
     background-color: #a02828;
-    /*float: left;*/
     display: flex;
     flex-direction:row;
-
+    margin-bottom: 20px;
 }
 
 /*图片*/
 #brief .myPic{
     width: 180px;
     height: 210px;
-    /*position: absolute;
-    top:10px;
-    left: 50%;*/
     margin: 0 0 5px 5px;
     align-self:flex-end;
-
 }
 
 /*简介的内容*/
 #brief ul{
     color: white;
     flex: 1;
-    /*position: absolute;
-    top: 220px;
-    right: 10px;*/
     list-style: none;
     margin: 0;
     align-self:flex-end;
-    /*font-size: 1.5em;*/
 }
 #brief ul li{
-    /*float: right;*/
     margin:0 0px 5px 0;
     padding-left: 40px;
 }
@@ -60,19 +49,15 @@
 #content{
 	width: 95%;
     height: 900px;
-    /*margin-left: 30px;*/
-    /*float: left;*/
 }
 
 /*每个子项都有间隔*/
 #content > div{
     margin: 0 0 20px 0;
 }
-
 #content p{
     margin: 0 0 10px 0;
 }
-
 #content hr{
     margin: 2px;
 }
@@ -89,7 +74,6 @@
 }
 #content .experience > div :last-child{
     flex: 1;
-    /*margin-left: 20px;*/
 }
 
 #content .awards > div{
@@ -122,16 +106,21 @@
     width: 220px;
 }
 #content .technology > div :last-child{
-    flex: 1;
+    display: flex;
 }
-#content .technology > div .list{
-    display: -webkit-box;
+
+#content .technology > div [class*=list] [class*=degree]{
+    width: 8px;
+    height: 8px;
+    margin: 6px 2px 4px 2px;
+    border: 1px #a02828 solid;
+    border-radius: 50px;
+}
+#content .technology > div [class*=list] [class$=\-1]{
+    background-color: #a02828;
 }
 
 /*PHP的半圆*/
-#content .technology > div [class*=list-]{
-    display: -webkit-box;
-}
 #content .technology > div [class*=list-] :nth-child(1){
     width: 4px;
     height: 8px;
@@ -144,14 +133,4 @@
     height: 8px;
     border-radius: 0 5px 5px 0/0 5px 5px 0;
     margin-left: -2px;
-}
-#content .technology > div [class*=degree]{
-    width: 8px;
-    height: 8px;
-    margin: 6px 2px 4px 2px;
-    border: 1px #a02828 solid;
-    -webkit-border-radius: 50px;
-}
-#content .technology > div [class$=\-1]{
-    background-color: #a02828;
 }

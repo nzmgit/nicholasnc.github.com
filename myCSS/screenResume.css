@@ -8,7 +8,8 @@ body{
     width: 100%;
     margin: 30px 0 50px 15%;
 	font-family:"Microsoft YaHei";
-    display: -webkit-box;
+    display: flex;
+    flex-direction: row;
 }
 
 /*简介*/
@@ -17,7 +18,6 @@ body{
     height: 380px;
     position: relative;
     background-color: #a02828;
-    float: left;
 }
 
 /*图片*/
@@ -51,7 +51,6 @@ body{
 	width: 600px;
     height: 900px;
     margin-left: 30px;
-    /*float: left;*/
 }
 
 /*每个子项都有间隔*/
@@ -72,7 +71,7 @@ body{
 
 #content .experience > div{
     margin: 0 0 10px 0;
-    display: -webkit-box;
+    display: flex;
 }
 #content .experience > div :first-child{
     width: 130px;
@@ -83,7 +82,7 @@ body{
 
 #content .awards > div{
     margin: 0 0 10px 0;
-    display: -webkit-box;
+    display: flex;
 }
 #content .awards > div :first-child{
     width: 130px;
@@ -94,7 +93,7 @@ body{
 
 #content .internship > div{
     margin: 0 0 10px 0;
-    display: -webkit-box;
+    display: flex;
 }
 #content .internship > div :first-child{
     width: 130px;
@@ -105,22 +104,27 @@ body{
 
 #content .technology > div{
     margin: 0 0 10px 0;
-    display: -webkit-box;
+    display: flex;
 }
 #content .technology > div :first-child{
     width: 130px;
 }
 #content .technology > div :last-child{
-    width: 470px;
+    display: flex;
 }
-#content .technology > div .list{
-    display: -webkit-box;
+
+#content .technology > div [class*=list] [class*=degree]{
+    width: 8px;
+    height: 8px;
+    margin: 6px 2px 4px 2px;
+    border: 1px #a02828 solid;
+    border-radius: 50px;
+}
+#content .technology > div [class*=list] [class$=\-1]{
+    background-color: #a02828;
 }
 
 /*PHP的半圆*/
-#content .technology > div [class*=list-]{
-    display: -webkit-box;
-}
 #content .technology > div [class*=list-] :nth-child(1){
     width: 4px;
     height: 8px;
@@ -133,14 +137,4 @@ body{
     height: 8px;
     border-radius: 0 5px 5px 0/0 5px 5px 0;
     margin-left: -2px;
-}
-#content .technology > div [class*=degree]{
-    width: 8px;
-    height: 8px;
-    margin: 6px 2px 4px 2px;
-    border: 1px #a02828 solid;
-    -webkit-border-radius: 50px;
-}
-#content .technology > div [class$=\-1]{
-    background-color: #a02828;
 }
