@@ -69,7 +69,10 @@
     margin: 0 0 10px 0;
 }
 #content hr{
-    margin: 2px;
+    height: 1px;
+    background: #a02828;
+    border: 0;
+    margin: 1px 0px 2px 0px;
 }
 #content strong{
     color: #a02828;

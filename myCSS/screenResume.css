@@ -7,7 +7,7 @@ body{
 #resume{
     width: 100%;
     margin: 30px 0 50px 15%;
-	font-family:"Microsoft YaHei";
+    font-family:"Microsoft YaHei";
     display: flex;
     flex-direction: row;
 }
@@ -15,34 +15,36 @@ body{
 /*简介*/
 #brief{
     width: 200px;
-    height: 380px;
+    height: 420px;
     position: relative;
     background-color: #a02828;
 }
 
 /*图片*/
 #brief .myPic{
-    width: 180px;
-    height: 210px;
     position: absolute;
     top:10px;
     left: 50%;
+    width: 180px;
+    height: 210px;
     margin-left: -90px;
 
 }
 
 /*简介的内容*/
 #brief ul{
-    color: white;
-    width: 140px;
     position: absolute;
-    top: 220px;
+    top: 230px;
     right: 10px;
+    width: 140px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
     list-style: none;
 }
 #brief ul li{
     float: right;
-    margin:0 0px 5px 10px;
+    margin:0px 0px 10px 10px;
 }
 
 
@@ -63,7 +65,10 @@ body{
 }
 
 #content hr{
-    margin: 2px;
+    height: 1px;
+    background: #a02828;
+    border: 0;
+    margin: 1px 0px 2px 0px;
 }
 #content strong{
     color: #a02828;
