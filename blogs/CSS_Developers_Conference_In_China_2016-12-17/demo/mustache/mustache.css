@@ -1,0 +1,47 @@
+.mustache {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+
+    color: hsl(calc(var(--mouse-x, 1) * 100), 100%, 50%);
+    box-shadow: 150px 240px 0 0 currentColor, 300px 240px 0 0 currentColor;
+}
+
+/* 备注：其实最新的标准，关于伪元素，建议是使用双冒号，但是因为before是很早就有的一个伪元素，为了兼容IE，也是可以使用单冒号的 */
+.mustache::before {
+    position: absolute;
+    left: 30px;
+    top: 120px;
+
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    width: 210px;
+    height: 120px;
+
+    /*transform: rotate(-40deg);*/
+    transform: rotate(calc(var(--mouse-y, -40deg) * -100deg));
+    transform-origin: right 210px;
+
+    content: '';
+}
+
+.mustache::after {
+    position: absolute;
+    left: 390px;
+    top: 120px;
+
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    width: 210px;
+    height: 120px;
+
+    /*transform: rotate(40deg);*/
+    transform: rotate(calc(var(--mouse-y, 40deg) * 100deg));
+    transform-origin: left 210px;
+
+    content: '';
+}
