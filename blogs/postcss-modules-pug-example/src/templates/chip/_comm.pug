@@ -1,0 +1,24 @@
+
+//- 将这个变量放在这里，就不需要每次都修改每个文件
+//- 0 -- 正式
+//- 1 -- 不开webpack服务器
+//- 2 -- 开webpack服务器
+//- - var isTest = 0;
+- var isTest = 1;
+//- - var isTest = 2;
+
+//- 这个变量用来标示是移动端项目还是pc端项目
+//- 主要用于标示是否需要引入一些移动端的库
+- var isMobile = false;
+
+//- 判断是否需要引入swiper-3.4.0.jquery.min.js
+- var swiperJquery = false;
+
+//- 判断是否需要引入swiper.animate1.0.2.min.js
+- var swiperAnimate = false;
+
+//- SEO的TDK
+mixin TDK(title, keyword, description)
+    title= title
+    meta(name="keywords" content=keyword)
+    meta(name="description" content=description)

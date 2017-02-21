@@ -1,0 +1,10 @@
+doctype html
+html(lang="cn")
+    include ./chip/_comm.pug
+    - var page = '';
+    include ./chip/_head.pug
+    body
+        h1(class=css.fl) postcss-modules
+        h2(class=css['flex-box']) h2
+        h3(class=css['flex-b-sbc']) h3
+        include ./chip/_scripts.pug

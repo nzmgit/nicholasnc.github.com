@@ -1,0 +1,19 @@
+{
+  "name": "postcss-modules-pug-example",
+  "version": "1.0.0",
+  "description": "postcss-modules-pug-example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-pug": "^3.2.0",
+    "gulp-postcss": "^6.3.0",
+    "postcss": "^5.2.14",
+    "postcss-modules": "^0.6.4"
+  }
+}
