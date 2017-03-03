@@ -35,7 +35,7 @@
 ## 使用建议
 在安卓的UC 和 QQ 浏览器上虽然不能使用 clipboardjs ，但是使用 `target-input` 和 `target-textarea` 时可以出现下图效果：
 
-![](http://image.talkmoney.cn/2017-03-03/20170303084802.jpg)
+![](http://image.talkmoney.cn/2017-03-03/20170303084833.jpg)
 
 在UC下可以直接出现复制的选项，而QQ浏览器则不行。
 
