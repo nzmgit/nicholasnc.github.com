@@ -13,22 +13,22 @@
 ## 相关链接
 [clipboard.js](https://clipboardjs.com/)
 
-[github仓库地址](https://github.com/NicholasNC/nicholasnc.github.com/tree/master/blogs/test_clipboardjs3)
+[github仓库地址](https://github.com/NicholasNC/nicholasnc.github.com/tree/master/blogs/test_clipboardjs)
 
 [Demo地址](http://nicholasnc.github.io/blogs/test_clipboardjs)
 
 ## 测试结果
-`clipboard.js` 有8中使用方式，详细可见[clipboard.js Demo](https://github.com/zenorocha/clipboard.js/tree/master/demo)
+`clipboard.js` 有8种使用方式，详细可见[clipboard.js Demo](https://github.com/zenorocha/clipboard.js/tree/master/demo)
 
 
-移动端**可以**使用的浏览器有：（8中方式都可以）
+移动端**可以**使用的浏览器有：（8种方式都可以）
 - 安卓 微信 版本 `6.5.4`
 - 安卓 Chrome、Opera
 - IOS 微信 版本 `6.5.3`
 - IOS Safari `iOS 10.2.1`
 - IOS UC浏览器
 
-**不可使用**的浏览器：（8中方式都不行）
+**不可使用**的浏览器：（8种方式都不行）
 - 安卓 UC浏览器 版本 `v11.4.1.939`
 - 安卓 QQ浏览器 版本 `7.3.0.3026`
 
